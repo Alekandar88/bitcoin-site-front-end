@@ -1,0 +1,213 @@
+@font-face {
+  font-family: 'Titillium Web Semi-bold';
+  src: url("../fonts/TitilliumWeb-SemiBold.ttf");
+}
+@font-face {
+  font-family: 'Titillium Web Bold';
+  src: url("../fonts/TitilliumWeb-Bold.ttf");
+}
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url("../fonts/Montserrat-Bold.ttf");
+}
+html,body{
+  font-family: 'Titillium Web Semi-bold';
+}
+.parent-wrapper {
+  #main {
+    background: #4b4e55 !important;
+    height: unset !important;
+
+    .progress-bar-wrap-parent {
+      background: #4b4e55;
+      width: 900px;
+      margin: -15px auto 10px;
+      padding: 1px 10px 1px 20px;
+      border-radius: 10px;
+      .progress-bar-wrap {
+        margin-top: 10px;
+        position: relative;
+        width: 86%;
+        height: 10px;
+        background: #6c707c;
+        border-radius: 5px;
+        overflow: hidden;
+        display: inline-block;
+        .p {
+          visibility: hidden;
+        }
+      }
+      span.numerator {
+        color: #9c9ea2;
+        display: inline-block;
+        margin-left: 20px;
+        font-size: 14px;
+      }
+      span.denomirator {
+        color: #1dd1a1;
+        font-size: 14px;
+      }
+
+      .progress-bar {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 10px;
+        background: #1dd1a1;
+        border-radius: 5px;
+        transform: translateX(-100%);
+        z-index: 2;
+      }
+    }
+    .level {
+      text-align: center;
+      border: none;
+      height: 40px !important;
+      background: #4B4E55 !important;
+      p {
+        color: #9c9ea2;
+        font-size: 20px;
+        span {
+          color: #1dd1a1;
+          font-size: 22px;
+        }
+      }
+    }
+
+
+    .profile {
+      background: #f4f4f4;
+      padding: 30px;
+      .header {
+        h3 {
+          display: inline-block;
+        }
+        .line{
+          display: inline-block;
+          width: 1010px;
+          height: 24px;
+          border-bottom: 0.08em solid lightgrey;
+          position: relative;
+          margin-left: 20px;
+        }
+        .line:after{
+          position: absolute;
+          width: 65px;
+          height: 12px;
+          content: '';
+          background: url("../assets/slider.png");
+          top: 17px;
+          left: -4px;
+        }
+      }
+      .profile_info {
+        margin-left: 20px;
+        p.label {
+          color: #7f8081;
+          font-size: 12px;
+          display: inline-block;
+        }
+        p.info {
+          float: right;
+          display: inline-block;
+          color: #7f8081;
+          font-size: 11px;
+          font-weight: bold;
+          span.info-icon {
+            padding: 1px 7px;
+            border: 1px solid;
+            border-radius: 100%;
+            font-size: 10px;
+            font-weight: bold;
+          }
+          span.number {
+            color: #1dd1a1;
+          }
+        }
+        .name {
+          text-align: right;
+          margin-top: 38px;
+        }
+        .member {
+          margin-top: 34px;
+          color: #bababa;
+          font-size: 14px;
+        }
+        .wagered {
+          width: 90%;
+          text-align: center;
+          padding: 10px;
+          background: #e7e7e7;
+          border-radius: 10px;
+          p {
+            font-size: 11px;
+            margin-bottom: 0;
+          }
+          h4 {
+            color: #1dd1a1;
+            font-weight: bold;
+            font-family: 'Montserrat-Bold';
+          }
+        }
+        .bets {
+          width: 90%;
+          background: #e7e7e7;
+          text-align: center;
+          padding: 10px;
+          border-radius: 10px;
+          p {
+            font-size: 11px;
+            margin-bottom: 0;
+          }
+          h4 {
+            color: #1dd1a1;
+            font-weight: bold;
+            font-family: 'Montserrat-Bold';
+          }
+        }
+      }
+    }
+  }
+  .affiliates {
+    .column {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+  }
+  .sidebar-wrapper {
+    box-shadow: -2px 10px 20px -7px black !important;
+    height: initial !important;
+  }
+  .referrals_info {
+    margin-top: 30px;
+    .your_earnings {
+      color: #18efad !important;
+      text-shadow: #18efad 1px 0 7px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    h4 {
+      color: #a8acbb;
+    }
+    .large {
+      color: #83889e;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    button {
+      color: white;
+      background: #18efad;
+      width: 80%;
+      margin: 20px auto 180px auto;
+    }
+  }
+}
+.main-area-wrapper {
+  #main {
+    .tabs-wrapper {
+      transform: none !important;
+      background: #42454E !important;
+    }
+  }
+}

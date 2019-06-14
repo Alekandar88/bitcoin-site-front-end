@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap-reboot.min.css" />
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="./css/affiliates.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>BitCAST</title>
+  </head>
+  <body>
+    <div class="parent-wrapper">
+      <div class="parent-wrapper-container">
+        <div class="wrapper-container">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"
+              ><img class="header-logo-img" src="./assets/logo.png" alt="Logo"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto navbar-items-list">
+                <li class="nav-item active">
+                  <a class="nav-link" href="./index.html"
+                    >Trade <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    data-toggle="modal"
+                    data-target="#leaderboardModal"
+                    >Leaderboard</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="./affiliates.html"
+                    tabindex="-1"
+                    aria-disabled="true"
+                    >Affiliates</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="./profile.html"
+                    tabindex="-1"
+                    aria-disabled="true"
+                    >Profile</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="#support"
+                    tabindex="-1"
+                    aria-disabled="true"
+                    >Support</a
+                  >
+                </li>
+              </ul>
+              <button
+                class="btn my-2 my-lg-0 btn-deposit"
+                type="button"
+                data-toggle="modal"
+                data-target="#depositModal"
+              >
+                Deposit
+              </button>
+              <button class="btn my-2 my-sm-0 btn-withdraw">Withdraw</button>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="container-fluid main-area-wrapper">
+        <div class="row affiliates">
+          <div class="column" id="main">
+            <div class="partnership">
+              <div class="header">
+                <h3>Partnership</h3>
+                <span class="line"></span>
+              </div>
+              <div class="referral_form">
+                <p class="label">Your Referral Link:</p>
+                <p class="info">
+                  <span class="info-icon">i</span>
+                  You need to invite at least
+                  <span class="number">20 referrals</span> to be able to
+                  withdraw partnership balance
+                </p>
+                <input
+                  type="text"
+                  class="link"
+                  id="link"
+                  value="http://bitcard.com/a/shimsho"
+                />
+                <label type="text" for="link" class="label-input">
+                  <div>
+                    <span>Shimsho</span>
+                  </div>
+                  <button class="change">Change</button>
+                </label>
+              </div>
+            </div>
+
+            <div class="progress-bar-wrap-parent">
+              <span
+                class="progress-bar-wrap-shadow"
+                style="width: 29.5%;"
+              ></span>
+              <div class="progress-bar-wrap">
+                <progress class="p" value="0.3"></progress>
+                <div
+                  class="progress-bar"
+                  style="transform: translateX(-30%)"
+                ></div>
+              </div>
+              <span class="numerator">1415$/</span
+              ><span class="denomirator">2000$</span>
+            </div>
+            <div class="level">
+              <p>Level <span>21</span></p>
+            </div>
+            <img src="./assets/blades.png" width="100%" style="margin-top: 15px" alt="" />
+            <div class="refferal_table_wrapper">
+              <p class="your_refferals" data-toggle="pill">
+                Your Refferals
+              </p>
+              <div class="table_wrapper">
+                <table width="99%">
+                  <thead>
+                    <tr>
+                      <th style="padding: 10px 170px 10px 20px;">User</th>
+                      <th>Deposited</th>
+                      <th>Bet</th>
+                      <th>Percentage</th>
+                      <th colspan="2">Earnings</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="padding: 10px 170px 10px 20px;">Shimsho</td>
+                      <td>$ 25,515</td>
+                      <td>$ 100,000</td>
+                      <td>3%</td>
+                      <td>124.24 $</td>
+                      <td>Claimed $221.122</td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 10px 170px 10px 20px;">Shimsho</td>
+                      <td>$ 25,515</td>
+                      <td>$ 100,000</td>
+                      <td>3%</td>
+                      <td>124.24 $</td>
+                      <td>Claimed $221.122</td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 10px 170px 10px 20px;">Shimsho</td>
+                      <td>$ 25,515</td>
+                      <td>$ 100,000</td>
+                      <td>3%</td>
+                      <td>124.24 $</td>
+                      <td>Claimed $221.122</td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 10px 170px 10px 20px;">Shimsho</td>
+                      <td>$ 25,515</td>
+                      <td>$ 100,000</td>
+                      <td>3%</td>
+                      <td>124.24 $</td>
+                      <td>Claimed $221.122</td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 10px 170px 10px 20px;">Shimsho</td>
+                      <td>$ 25,515</td>
+                      <td>$ 100,000</td>
+                      <td>3%</td>
+                      <td>124.24 $</td>
+                      <td>Claimed $221.122</td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 10px 170px 10px 20px;">Shimsho</td>
+                      <td>$ 25,515</td>
+                      <td>$ 100,000</td>
+                      <td>3%</td>
+                      <td>124.24 $</td>
+                      <td>Claimed $221.122</td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 10px 170px 10px 20px;">Shimsho</td>
+                      <td>$ 25,515</td>
+                      <td>$ 100,000</td>
+                      <td>3%</td>
+                      <td>124.24 $</td>
+                      <td>Claimed $221.122</td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 10px 170px 10px 20px;">Shimsho</td>
+                      <td>$ 25,515</td>
+                      <td>$ 100,000</td>
+                      <td>3%</td>
+                      <td>124.24 $</td>
+                      <td>Claimed $221.122</td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 10px 170px 10px 20px;">Shimsho</td>
+                      <td>$ 25,515</td>
+                      <td>$ 100,000</td>
+                      <td>3%</td>
+                      <td>124.24 $</td>
+                      <td>Claimed $221.122</td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 10px 170px 10px 20px;">Shimsho</td>
+                      <td>$ 25,515</td>
+                      <td>$ 100,000</td>
+                      <td>3%</td>
+                      <td>124.24 $</td>
+                      <td>Claimed $221.122</td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 10px 170px 10px 20px;">Shimsho</td>
+                      <td>$ 25,515</td>
+                      <td>$ 100,000</td>
+                      <td>3%</td>
+                      <td>124.24 $</td>
+                      <td>Claimed $221.122</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 column sidebar-wrapper" id="sticky-sidebar">
+            <div class="row user">
+              <div class="col-md-3 p-3">
+                <img src="./assets/user.png" class="user-img" alt="User" />
+              </div>
+              <div class="col-md-8 user-data pt-3 pb-3">
+                <p>Shimsho</p>
+                <h6>0.014648 BTC</h6>
+                <div class="currency active">
+                  <div>BTC</div>
+                  <div class="dot"></div>
+                </div>
+                <div class="currency">
+                  <div>mBTC</div>
+                  <div class="dot"></div>
+                </div>
+                <div class="currency">
+                  <div>USD</div>
+                  <div class="dot"></div>
+                </div>
+                <div class="shutdown">
+                  <img src="./assets/shutdown.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="row referrals_info">
+              <div class="col-md-6">
+                <div>
+                  <p class="large">Your Referrals</p>
+                  <h4>13.23s</h4>
+                </div>
+                <div style="margin-top: 20px;">
+                  <p class="large">Your Earnings</p>
+                  <span class="your_earnings">12,424$</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div>
+                  <p class="large">Referrals Deposited</p>
+                  <span>12,424$</span>
+                </div>
+              </div>
+              <button class="btn">
+                Claim Earnings
+              </button>
+            </div>
+            <div class="sidebar-footer">
+              <div class="live-price-header">
+                <div class="circle"></div>
+                <span>Live Price</span>
+              </div>
+              <h5 class="live-price-value">
+                $4984.93
+                <img src="./assets/bitcoin.png" alt="" />
+              </h5>
+              <div class="hours">
+                <div>
+                  <p>24 HR</p>
+                  <span class="green"
+                    >4.15%
+                    <img src="./assets/arrow_up_footer.png" alt="" />
+                  </span>
+                </div>
+                <div>
+                  <p>1 HR</p>
+                  <span class="green"
+                    >1.53%
+                    <img src="./assets/arrow_up_footer.png" alt="" />
+                  </span>
+                </div>
+                <div>
+                  <p>10 Min</p>
+                  <span class="red"
+                    >0.2255%
+                    <img src="./assets/arrow_down_footer.png" alt="" />
+                  </span>
+                </div>
+              </div>
+
+              <div class="copyright">
+                <p>BitCAST&#8482;</p>
+                <span>All Rights Reserved 2019</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="depositModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Deposit</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row methods">
+              <div class="col-md-6 bitcoin">
+                <button class="btn active">
+                  <img src="./assets/bitcoin_circle.png" alt="" />
+                  <h4>bitcoin</h4>
+                </button>
+              </div>
+              <div class="col-md-6 Altcoins">
+                <button class="btn">
+                  <h4>Altcoins</h4>
+                </button>
+              </div>
+            </div>
+
+            <div class="form_section">
+              <div class="enter-amount input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter amount you would like to send"
+                />
+                <img src="./assets/dollar_green.png" alt="" />
+              </div>
+              <div class="bitcoin_amount input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Bitcoin Amount"
+                />
+                <img src="./assets/bitcoin_green.png" alt="" />
+              </div>
+            </div>
+
+            <div class="bitcoin_deposit row">
+              <div class="deposit_form col-md-8">
+                <h6>Bitcoin Deposit</h6>
+                <p class="desc">
+                  Copy the above bitcoin value to receive the correct on site
+                  conversion rate. <br />
+                  Send any amount of bitcoin to the following address.
+                </p>
+                <p class="contact_support">
+                  Contact
+                  <a href="#" style="color: #000; font-weight: bolder;"
+                    >support</a
+                  >
+                  for issues
+                </p>
+                <p class="bitcoin_label">Permanent Bitcoin Deposit Address</p>
+                <div class="input-group">
+                  <input
+                    id="text"
+                    type="text"
+                    class="form-control"
+                    value="12lkjdas786asdjasd8972kjhkjasd79"
+                    style="width:80%"
+                  /><br />
+                  <span class="copy">Copy</span>
+                </div>
+              </div>
+              <div class="bitcoin_qr_code col-md-4">
+                <div id="qrcode"></div>
+              </div>
+            </div>
+
+            <div class="add_bonus">
+              <div class="bitcoin_amount input-group">
+                <input
+                  type="text"
+                  placeholder="Enter a referal code for a bonus"
+                />
+                <span><button class="btn text-white">Add Bonus +</button></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="leaderboardModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5
+              class="modal-title"
+              id="leaderboardModalLabel"
+              style="color: #ebebeb;"
+            >
+              Leaderboard
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="leader_board">
+              <table width="100%">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Player</th>
+                    <th>Wagered</th>
+                    <th>Profit</th>
+                    <th>Bets</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Shimsho</td>
+                    <td>B 5,212,234</td>
+                    <td>B 5,212,234</td>
+                    <td>22,323</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Shimsho</td>
+                    <td>B 5,212,234</td>
+                    <td>B 5,212,234</td>
+                    <td>22,323</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Shimsho</td>
+                    <td>B 5,212,234</td>
+                    <td>B 5,212,234</td>
+                    <td>22,323</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Shimsho</td>
+                    <td>B 5,212,234</td>
+                    <td>B 5,212,234</td>
+                    <td>22,323</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Shimsho</td>
+                    <td>B 5,212,234</td>
+                    <td>B 5,212,234</td>
+                    <td>22,323</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Shimsho</td>
+                    <td>B 5,212,234</td>
+                    <td>B 5,212,234</td>
+                    <td>22,323</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Shimsho</td>
+                    <td>B 5,212,234</td>
+                    <td>B 5,212,234</td>
+                    <td>22,323</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Shimsho</td>
+                    <td>B 5,212,234</td>
+                    <td>B 5,212,234</td>
+                    <td>22,323</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Shimsho</td>
+                    <td>B 5,212,234</td>
+                    <td>B 5,212,234</td>
+                    <td>22,323</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Shimsho</td>
+                    <td>B 5,212,234</td>
+                    <td>B 5,212,234</td>
+                    <td>22,323</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Shimsho</td>
+                    <td>B 5,212,234</td>
+                    <td>B 5,212,234</td>
+                    <td>22,323</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Shimsho</td>
+                    <td>B 5,212,234</td>
+                    <td>B 5,212,234</td>
+                    <td>22,323</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Shimsho</td>
+                    <td>B 5,212,234</td>
+                    <td>B 5,212,234</td>
+                    <td>22,323</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="ranked">
+              <p>You are ranked <span>142</span> out of 12,424 players</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://livejs.com/live.js"></script>
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
+    <script src="./js/qrcode.js"></script>
+    <script>
+      let text = document.getElementById("text").value;
+      new QRCode(document.getElementById("qrcode"), text);
+      $(".table_wrapper table tbody tr:odd").css({
+        "background-color": "#3a3d44"
+      });
+      $(".table_wrapper table tbody tr:even").css({
+        "background-color": "#41444b"
+      });
+    </script>
+    <script src="./js/custom.js"></script>
+  </body>
+</html>

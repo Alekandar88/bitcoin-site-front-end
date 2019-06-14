@@ -1,0 +1,237 @@
+@font-face {
+  font-family: 'Titillium Web Semi-bold';
+  src: url("../fonts/TitilliumWeb-SemiBold.ttf");
+}
+
+html,body{
+  font-family: 'Titillium Web Semi-bold';
+}
+
+.parent-wrapper {
+  #main{
+    height: unset !important;
+    background: #4b4e55 !important;
+    .progress-bar-wrap-parent{
+      background: #4b4e55;
+      width: 900px;
+      margin: -34px auto 10px;
+      padding: 0 10px 1px 17px;
+      border-radius: 10px;
+      .progress-bar-wrap {
+        margin-top: 10px;
+        position: relative;
+        width: 86%;
+        height: 10px;
+        background: #6c707c;
+        border-radius: 5px;
+        overflow: hidden;
+        display: inline-block;
+        .p {
+          visibility: hidden;
+        }
+      }
+      span.numerator{
+        color: #9c9ea2;
+        display: inline-block;
+        margin-left: 20px;
+        font-size: 14px;
+      }
+      span.denomirator{
+        color: #1dd1a1;
+        font-size: 14px;
+      }
+
+      .progress-bar {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 10px;
+        background: #1dd1a1;
+        border-radius: 5px;
+        transform: translateX(-100%);
+        z-index: 2;
+      }
+    }
+    .level {
+      text-align: center;
+      border: none;
+      height: 40px !important;
+      background: #4B4E55;
+      margin-bottom: 20px;
+      p{
+        color: #9c9ea2;
+        font-size: 20px;
+        span{
+          color: #1dd1a1;
+          font-size: 22px;
+        }
+      }
+    }
+    .refferal_table_wrapper{
+      background: #42454E;
+
+      .your_refferals {
+        text-align: center;
+        border: none;
+        margin-bottom: -10px !important;
+        height: 40px !important;
+        color: #fff;
+      }
+
+
+      table {
+        margin-top: 20px;
+        thead th {
+          text-align: left;
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          background: #363940;
+          padding-left: 10px;
+        }
+        tbody td:nth-of-type(1) {
+          padding: 12px 0 12px 40px;
+        }
+        tbody td {
+          padding: 12px 0 12px 15px;
+          text-align: left;
+        }
+        tbody td:nth-of-type(5){
+          color: #16C095;
+          text-shadow: #18efad 1px 0 5px;
+          opacity: 0.59;
+        }
+        tbody td:last-of-type{
+          text-align: right;
+          padding-right: 10px;
+        }
+        color: #83889e;
+        font-size: 12px;
+        font-weight: bold;
+      }
+    }
+
+    .partnership{
+      background: #f4f4f4;
+      padding: 30px 30px 70px 30px;
+      margin-bottom: 22px;
+      .header{
+        h3{
+          display: inline-block;
+        }
+        .line{
+          display: inline-block;
+          width: 1010px;
+          height: 24px;
+          border-bottom: 0.08em solid lightgrey;
+          position: relative;
+          margin-left: 20px;
+        }
+        .line:after{
+          position: absolute;
+          width: 65px;
+          height: 12px;
+          content: '';
+          background: url("../assets/slider.png");
+          top: 17px;
+          left: -4px;
+        }
+      }
+      .referral_form{
+        margin-left: 20px;
+        margin-top: 20px;
+        p.label{
+          color: #7f8081;
+          font-size: 12px;
+          display: inline-block;
+        }
+        p.info{
+          float: right;
+          display: inline-block;
+          color: #000;
+          font-size: 11px;
+          font-weight: bold;
+          span.info-icon{
+            padding: 0 5px;
+            border: 1px solid;
+            border-radius: 100%;
+            font-size: 8px;
+            font-weight: bold;
+          }
+          span.number{
+            color: #1dd1a1;
+            font-weight: bold;
+          }
+        }
+        input.link{
+          background: #e6e7e8;
+          border-radius: 30px;
+          border: none;
+          width: 70%;
+          height: 45px;
+          display: inline-block;
+          padding: 0 30px;
+          opacity: 0.80;
+        }
+        label.label-input{
+          background: #e6e7e8;
+          border-radius: 30px;
+          border: 1px solid lightgrey;
+          width: 20%;
+          display: inline-block;
+          padding: 5px 20px;
+          margin-left: 15px;
+          div{
+            width: 50%;
+            display: inline-block;
+            span{
+              font-size: 12px;
+            }
+          }
+          button{
+            width: 90px;
+            color: white;
+            background: #1dd1a1;
+            border: none;
+            border-radius: 30px;
+            padding: 8px 20px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+  }
+  .affiliates{
+    .column{
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+  }
+  .sidebar-wrapper{
+    box-shadow: -2px 10px 20px -7px black !important;
+    height: initial !important;
+    .your_earnings{
+      color: #18efad !important;
+      text-shadow: #18efad 1px 0 7px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+  .referrals_info{
+    margin-top: 30px;
+    h4{
+      color: #a8acbb;
+    }
+    .large{
+      color: #83889e;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    button{
+      color: white;
+      background: #18efad;
+      width: 80%;
+      margin: 20px auto 180px auto;
+    }
+  }
+}
